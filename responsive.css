@@ -1,0 +1,348 @@
+/* Tablet Styles (992px and below) */
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    .hero-stats {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+    .hero-stats .stat {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .ingredients-circle {
+        width: 400px;
+        height: 400px;
+    }
+
+    .product-section .container,
+    .ritual-section .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .benefit-item {
+        justify-content: center;
+    }
+
+    .statistics-section .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .main-footer .container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Styles (768px and below) */
+@media screen and (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: var(--text-color);
+        position: absolute;
+        transition: all 0.3s;
+    }
+
+    .hamburger-menu span:first-child {
+        top: 0;
+    }
+
+    .hamburger-menu span:nth-child(2) {
+        top: 9px;
+    }
+
+    .hamburger-menu span:last-child {
+        bottom: 0;
+    }
+
+    .main-header.menu-open .hamburger-menu span:first-child {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .main-header.menu-open .hamburger-menu span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .main-header.menu-open .hamburger-menu span:last-child {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    .main-header.menu-open .main-nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(10px);
+        padding: 100px 30px;
+        z-index: 99;
+    }
+
+    .main-header.menu-open .main-nav ul {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .main-header.menu-open .main-nav a {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        padding: 100px 0 60px;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .hero-stats .stat {
+        min-width: 200px;
+    }
+
+    .hero-stats h2 {
+        font-size: 36px;
+    }
+
+    .ingredients-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .subscription-options {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .press-logos {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .press-logos img {
+        height: 20px;
+    }
+
+    .product-options .subscription-options {
+        grid-template-columns: 1fr;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
+
+/* Mobile Styles (576px and below) */
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .main-header .container {
+        height: 60px;
+    }
+
+    .logo img {
+        height: 24px;
+    }
+
+    .try-free-btn {
+        display: none;
+    }
+
+    .hero-section {
+        padding: 80px 0 40px;
+        min-height: 80vh;
+    }
+
+    .hero-section h1 {
+        font-size: 32px;
+        padding: 0 20px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-stats .stat {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .hero-stats h2 {
+        font-size: 32px;
+    }
+
+    .benefits-section h2,
+    .product-section h2,
+    .subscription-section h2,
+    .comparison-section h2,
+    .product-selection h2,
+    .ritual-section h2,
+    .testimonials-section h2,
+    .faq-section h2,
+    .newsletter-section h2 {
+        font-size: 28px;
+        padding: 0 20px;
+    }
+
+    .ingredients-circle {
+        width: 250px;
+        height: 250px;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .statistics-section .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .stat-number {
+        font-size: 36px;
+    }
+
+    .testimonial {
+        padding: 20px;
+    }
+
+    .testimonial p {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-form input,
+    .footer-form button {
+        width: 100%;
+    }
+}
+
+/* Animation Optimizations for Mobile */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* High DPI Screens */
+@media screen and (min-resolution: 192dpi) {
+    img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #fff;
+        --light-bg: #1a1a1a;
+        --border-color: #333;
+    }
+
+    body {
+        background: #121212;
+    }
+
+    .main-header {
+        background: rgba(18, 18, 18, 0.95);
+    }
+
+    .newsletter-form input {
+        background: rgba(255, 255, 255, 0.05);
+    }
+}
+
+/* Print Styles */
+@media print {
+    .main-header,
+    .hero-section,
+    .benefits-section,
+    .subscription-section,
+    .press-section,
+    .testimonials-section,
+    .newsletter-section,
+    .main-footer {
+        display: none;
+    }
+
+    .product-section,
+    .comparison-section,
+    .product-selection,
+    .ritual-section,
+    .statistics-section {
+        padding: 20px 0;
+        page-break-inside: avoid;
+    }
+
+    .container {
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+} 
